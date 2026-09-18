@@ -1,0 +1,20 @@
+{
+  "name": "web_s1_2027",
+  "version": "1.0.0",
+  "description": "",
+  "homepage": "https://github.com/ThomasBuchler05/Web_S1_2027#readme",
+  "bugs": {
+    "url": "https://github.com/ThomasBuchler05/Web_S1_2027/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ThomasBuchler05/Web_S1_2027.git"
+  },
+  "license": "ISC",
+  "author": "",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  }
+}
