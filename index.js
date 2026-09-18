@@ -1,3 +1,5 @@
+import handles.js
+
 console.log("Hello Node.js!")
 // Import a module
 const http = require('http')
@@ -14,17 +16,10 @@ const content = '<!DOCTYPE html>' +
 '</html>'
 
 const url = require('url')
+const qs = require('querystring')
 
-const serverHandle = function (req, res) {
-  // Retrieve and print the current path
-  const path = url.parse(req.url).pathname
-  console.log(path)
 
-  res.writeHead(200, {'Content-Type': 'text/html'})
-  res.write(path)
-  res.end()
-}
 
 http
-.createServer(serverHandle)
+.createServer(handles.serverHandle)
 .listen(8080)
